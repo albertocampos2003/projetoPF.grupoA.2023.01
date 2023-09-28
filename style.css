@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0;                      //removi as margens que vem por padrão 
+    padding: 0;                    //mesma coisa aqui 
 }
 
 #game{
@@ -9,7 +9,7 @@
     border: 1px solid black;
 }
 
-#personagem{
+#dino{
     width: 20px;
     height: 50px;
     background-color: rebeccapurple;
@@ -18,10 +18,10 @@
 }
 
 .animar{
-    animation: personagem 500ms infinite;
+    animation: dino 500ms infinite;
 }
 
-@keyframes personagem {
+@keyframes dino {
     0%{top: 150px;}
     30%{top: 100;}
     70%{top: 100;}
