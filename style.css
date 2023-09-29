@@ -1,6 +1,6 @@
 *{
-    margin: 0;                      //removi as margens que vem por padrão 
-    padding: 0;                    //mesma coisa aqui 
+    margin: 0;                      /*removi as margens que vem por padrão*/
+    padding: 0;                    /*mesma coisa aqui*/
 }
 
 #game{
