@@ -11,7 +11,7 @@ function pular(){   //testar se o personagem possui a classe animar
     }, 500)
 }
 
-var testarColisao = setInterval( function(){
+var testarColisao = setInterval( function(){   
     
     var topoDino = parseInt( 
         window.getComputedStyle(dino).getPropertyValue('top')
@@ -20,7 +20,7 @@ var testarColisao = setInterval( function(){
         window.getComputedStyle(quadrado).getPropertyValue('left')
        )
     
-    if(EsquerdaQuadrado < 20 && EsquerdaQuadrado > 0 && topoDino >= 130){
+    if(EsquerdaQuadrado < 20 && EsquerdaQuadrado > 0 && topoDino >= 130){   //testa se o dino e o cacto colidiram ou não
         quadrado.style.animation = 'none'
         quadrado.style.display = 'none'
         alert('Você perdeu!')
