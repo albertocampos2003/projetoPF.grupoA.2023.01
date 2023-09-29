@@ -1,5 +1,7 @@
 const dino = document.querySelector('#dino')         //controlar o personagem
 const quadrado = document.querySelector('#quadrado') //controlar o obstáculo
+const dino2 = document.querySelector('#dino2')         //controlar o personagem
+const quadrado2 = document.querySelector('#quadrado2')
 
 function pular(){   //testar se o personagem possui a classe animar
     if(dino.classList != 'animar'){
@@ -11,12 +13,12 @@ function pular(){   //testar se o personagem possui a classe animar
     }, 500)
 }
 
-var testarColisao = setInterval( function(){   
+const testarColisao = setInterval( function(){   
     
-    var topoDino = parseInt( 
+    const topoDino = parseInt( 
         window.getComputedStyle(dino).getPropertyValue('top')
         )
-    var EsquerdaQuadrado = parseInt(
+    const EsquerdaQuadrado = parseInt(
         window.getComputedStyle(quadrado).getPropertyValue('left')
        )
     
@@ -28,3 +30,35 @@ var testarColisao = setInterval( function(){
     
 
 }, 10)
+
+function pular2(){   //testar se o personagem possui a classe animar
+    if(dino2.classList != 'animar2'){
+        dino2.classList.add('animar2')  //se não tiver, adiciona
+    }
+
+    setTimeout(function(){
+        dino2.classList.remove('animar2')
+    }, 500)
+}
+
+const testarColisao2 = setInterval( function(){   
+    
+    const topoDino2 = parseInt( 
+        window.getComputedStyle(dino2).getPropertyValue('top')
+        )
+    const EsquerdaQuadrado2 = parseInt(
+        window.getComputedStyle(quadrado2).getPropertyValue('left')
+       )
+    
+    if(EsquerdaQuadrado2 < 20 && EsquerdaQuadrado2 > 0 && topoDino2 >= 130){   //testa se o dino e o cacto colidiram ou não
+        quadrado2.style.animation = 'none'
+        quadrado2.style.display = 'none'
+        alert('Você perdeu!')
+    }
+    
+
+}, 10)
+
+document.addEventListener("keydown", function (event) {
+    pular2();
+});
