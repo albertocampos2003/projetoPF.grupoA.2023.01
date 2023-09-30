@@ -7,7 +7,7 @@
     width: 500px;
     height: 200px;
     border: 1px solid black;
-    margin: 0 auto; /*só pra deixar a tela do jogo no meio*/
+    margin: auto; /*só pra deixar a tela do jogo no meio*/
 }
 
 #dino{
@@ -45,16 +45,15 @@
 }
 /*segunda tela*/
 *{
-    margin: o;                     
+    margin: 0;                      
     padding: 0;                   
 }
 
 #game2{
     width: 500px;
     height: 200px;
-    top: 300px;
     border: 1px solid black;
-    margin: 0 auto; /*só pra deixar a tela do jogo no meio*/
+    margin-top: 30%; /*faz a segunda tela não colidir com a  primeira*/
 }
 
 #dino2{
@@ -62,18 +61,19 @@
     height: 50px;
     background-color: rgb(64, 175, 223);
     position: relative;
-    top: 150px;
+    top: -50px; /*adequação pra segunda tela*/
 }
+
 
 .animar2{
     animation: dino2 500ms infinite;
 }
 
-@keyframes dino2 {
-    0%{top: 150px;}
-    30%{top: 100;}
-    70%{top: 100;}
-    100%{top: 150;}
+@keyframes dino2 {     /*adequação na animação de pulo*/
+    0%{top: -50px;}
+    30%{top: -100;}
+    70%{top: -100;}
+    100%{top: -50;}
 }
 
 #quadrado2{
@@ -81,7 +81,7 @@
     height: 20px;
     background-color: rgb(45, 233, 31);
     position: relative;
-    top: 130px;
+    top: -70px; /*adequação para segunda tela*/
     left: 480px;
     animation: quadrado2 1s infinite linear;
 }
