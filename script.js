@@ -49,8 +49,8 @@ const testarColisao2 = setInterval( function(){
     const EsquerdaQuadrado2 = parseInt(
         window.getComputedStyle(quadrado2).getPropertyValue('left')
        )
-    
-    if(EsquerdaQuadrado2 < 20 && EsquerdaQuadrado2 > 0 && topoDino2 >= 130){   //testa se o dino e o cacto colidiram ou não
+                                                                               //testa se o dino e o cacto colidiram ou não
+    if(EsquerdaQuadrado2 < 20 && EsquerdaQuadrado2 > 0 && topoDino2 >= -70){   //mudança feita para adequar a função ao css
         quadrado2.style.animation = 'none'
         quadrado2.style.display = 'none'
         alert('Você perdeu!')
