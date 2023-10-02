@@ -47,7 +47,7 @@ const testarColisao2 = setInterval( function(){
         window.getComputedStyle(dino2).getPropertyValue('top')
         )
     const EsquerdaQuadrado2 = parseInt(
-        window.getComputedStyle(quadrado2).getPropertyValue('right ')
+        window.getComputedStyle(quadrado2).getPropertyValue('left')
        )
                                                                                //testa se o dino e o cacto colidiram ou não
     if(EsquerdaQuadrado2 < 20 && EsquerdaQuadrado2 > 0 && topoDino2 >= -70){   //mudança feita para adequar a função ao css
