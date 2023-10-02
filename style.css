@@ -45,8 +45,8 @@
 }
 /*segunda tela*/
 *{
-    margin: 0;                      
-    padding: 0;                   
+    margin: 0;                     
+    padding: 0;                    
 }
 
 #game2{
@@ -59,11 +59,11 @@
 #dino2{
     width: 20px;
     height: 50px;
+    left: 480px; /*mudança de posição do dino*/
     background-color: rgb(64, 175, 223);
     position: relative;
-    top: -50px; /*adequação pra segunda tela*/
+    top: -50px;  /*adequação pra segunda tela*/
 }
-
 
 .animar2{
     animation: dino2 500ms infinite;
@@ -78,15 +78,14 @@
 
 #quadrado2{
     width: 20px;
-    height: 20px;
+    height: 20px; 
     background-color: rgb(45, 233, 31);
     position: relative;
     top: -70px; /*adequação para segunda tela*/
-    right : 480px;
     animation: quadrado2 1s infinite linear;
 }
 
-@keyframes quadrado2 {
-    0%{right : 480px;}
-    100%{right : -40px;}
+@keyframes quadrado2 { /*mudança no sentido da animação*/
+    0%{right: 0px;}
+    100%{right: -520px;}
 }
