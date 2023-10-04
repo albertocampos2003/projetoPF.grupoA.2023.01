@@ -59,6 +59,23 @@ const testarColisao2 = setInterval( function(){
 
 }, 10)
 
-document.addEventListener("keydown", function (event) {
-    pular2();
-});
+function tratarEventoKeyup(event, callback) {
+    if (event.key === 'W' || event.key === 'w') { // Verificar se a tecla pressionada é "W" ou "w"
+      callback();
+    }
+  }
+  
+  document.addEventListener('keyup', function (event) {
+    tratarEventoKeyup(event, pular);
+  });
+
+function tratarEventoKeyup2(event, callback) {
+    if (event.key === ' ') { 
+      callback();
+    }
+  }
+ 
+  document.addEventListener('keyup', function (event) {
+    tratarEventoKeyup2(event, pular2);
+  });
+
