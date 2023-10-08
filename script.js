@@ -22,7 +22,8 @@ const testarColisao = setInterval( function(){
         window.getComputedStyle(quadrado).getPropertyValue('left')
        )
     
-    if(EsquerdaQuadrado < 20 && EsquerdaQuadrado > 0 && topoDino >= 130){   //testa se o dino e o cacto colidiram ou não
+    if(EsquerdaQuadrado < 50 && EsquerdaQuadrado > 0 && topoDino >= 150){   //testa se o dino e o cacto colidiram ou não
+                                                                           //fiz a adequação para os novos tamannhos do dino e do quadrado
         quadrado.style.animation = 'none'
         quadrado.style.display = 'none'
         alert('Você perdeu!')
@@ -50,7 +51,8 @@ const testarColisao2 = setInterval( function(){
         window.getComputedStyle(quadrado2).getPropertyValue('left')
        )
                                                                                  //testa se o dino e o cacto colidiram ou não
-    if(EsquerdaQuadrado2 < 500 && EsquerdaQuadrado2 > 460 && topoDino2 >= -70){   //mudança feita para adequar a função ao css
+    if(EsquerdaQuadrado2 < 1000 && EsquerdaQuadrado2 > 950 && topoDino2 >= -70){   //mudança feita para adequar a função ao css
+                                                                                 //adequação para os novos tamannhos do dino e do quadrado
         quadrado2.style.animation = 'none'
         quadrado2.style.display = 'none'
         alert('Você perdeu!')
