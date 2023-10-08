@@ -11,11 +11,11 @@
 }
 
 #dino{
-    width: 60px;
-    height: 60px;
+    width: 50px; /*adequação a nova tela*/
+    height: 50px; /*adequação a nova tela*/
     background-image: url(dino.png);
     position: relative;
-    top: 190px;
+    top: 200px; /*faz com que o dino fique no "chão"*/
 }
 
 .animar{
@@ -23,25 +23,25 @@
 }
 
 @keyframes dino {
-    0%{top: 150px;}
-    30%{top: 100;}
-    70%{top: 100;}
-    100%{top: 150;}
+    0%{top: 100px;} /*novo salto para que o dino consiga pular o novo quadrado*/
+    30%{top: 50;}
+    70%{top:  50;}
+    100%{top: 100;}
 }
 
 #quadrado{
-    width: 20px;
-    height: 20px;
+    width: 50px; /*novo tamanho do para se assimilar com o jogo original*/ 
+    height: 50px; /*novo tamanho do para se assimilar com o jogo original*/ 
     background-color: blue;
     position: relative;
-    top: 130px;
-    left: 480px;
-    animation: quadrado 1s infinite linear;
+    top: 150px; /*faz com que o quadrado fique no "chão"*/
+    left: 950px; /*faz com que o quadrado fique no canto esquerdo da tela*/
+    animation: quadrado 2s infinite linear;
 }
 
 @keyframes quadrado {
-    0%{left: 480px;}
-    100%{left: -40px;}
+    0%{left: 950px;}
+    100%{left: -100px;} /*faz com que o quadrado "saia" do canto direito da tela*/
 }
 /*segunda tela*/
 *{
@@ -57,12 +57,12 @@
 }
 
 #dino2{
-    width: 60px;
-    height: 60px;
-    left: 940px; /*mudança de posição do dino*/
+    width: 50px; /*mesma coisa do dino1*/
+    height: 50px;  /*mesma coisa do dino1*/
+    left: 950px; /*mudança de posição do dino*/
     background-color: rgb(64, 175, 223);
     position: relative;
-    top: -60px;  /*adequação pra segunda tela*/
+    top: -50px;  /*adequação pra segunda tela*/
 }
 
 .animar2{
@@ -70,22 +70,22 @@
 }
 
 @keyframes dino2 {     /*adequação na animação de pulo*/
-    0%{top: -50px;}
-    30%{top: -100;}
-    70%{top: -100;}
-    100%{top: -50;}
+    0%{top: -150px;}
+    30%{top: -50;}
+    70%{top: -50;}
+    100%{top: -150;}
 }
 
 #quadrado2{
-    width: 20px;
-    height: 20px; 
+    width: 50px; /*mesma coisa do quadrado1*/
+    height: 50px;  /*mesma coisa do quadrado1*/
     background-color: rgb(45, 233, 31);
     position: relative;
-    top: -70px; /*adequação para segunda tela*/
-    animation: quadrado2 1s infinite linear;
+    top: -100px; /*adequação para segunda tela*/
+    animation: quadrado2 2s infinite linear;
 }
 
 @keyframes quadrado2 { /*mudança no sentido da animação*/
     0%{right: 0px;}
-    100%{right: -520px;}
+    100%{right: -1000px;} /*faz com que o quadrado "saia" do canto esquerdo da tela*/
 }
