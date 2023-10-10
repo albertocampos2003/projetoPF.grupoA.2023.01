@@ -61,7 +61,7 @@
     width: 50px; /*mesma coisa do dino1*/
     height: 50px;  /*mesma coisa do dino1*/
     left: 950px; /*mudança de posição do dino*/
-    background-color: rgb(64, 175, 223);
+    background-image: url(dino2.png);
     position: relative;
     top: -50px;  /*adequação pra segunda tela*/
 }
