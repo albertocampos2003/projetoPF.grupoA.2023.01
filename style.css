@@ -8,7 +8,7 @@
     height: 250px;
     border-bottom: 2px solid rgb(8, 124, 43);   /*grama/
     margin: auto; /*só pra deixar a tela do jogo no meio*/
-    background: linear-gradient(#87ceeb, #e0f6ff);   /*céu*/
+    background-image: url(Backgroud.jpg);   /*adicionei essa imagem para testar*/
 }
 
 #dino{
