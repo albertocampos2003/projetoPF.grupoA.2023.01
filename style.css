@@ -6,8 +6,9 @@
 #game{
     width: 1000px;
     height: 250px;
-    border: 1px solid black;
+    border-bottom: 2px solid rgb(8, 124, 43);   /*grama/
     margin: auto; /*só pra deixar a tela do jogo no meio*/
+    background: linear-gradient(#87ceeb, #e0f6ff);   /*céu*/
 }
 
 #dino{
