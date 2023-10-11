@@ -3,15 +3,15 @@ const quadrado = document.querySelector('#quadrado') //controlar o obstáculo
 const dino2 = document.querySelector('#dino2')         //controlar o personagem
 const quadrado2 = document.querySelector('#quadrado2')
 
-function pular(){   //testar se o personagem possui a classe animar
+const pular = () =>{   //testar se o personagem possui a classe animar
     if(dino.classList != 'animar'){
         dino.classList.add('animar')  //se não tiver, adiciona
     }
 
-    setTimeout(function(){
+    setTimeout( function(){
         dino.classList.remove('animar')
     }, 500)
-}
+};
 
 const testarColisao = setInterval( function(){   
     
@@ -26,11 +26,10 @@ const testarColisao = setInterval( function(){
                                                                            //fiz a adequação para os novos tamannhos do dino e do quadrado
         quadrado.style.animation = 'none'
         quadrado.style.display = 'none'
-        alert('Você perdeu!')
     }
     
-
 }, 10)
+
 
 function pular2(){   //testar se o personagem possui a classe animar
     if(dino2.classList != 'animar2'){
@@ -55,7 +54,6 @@ const testarColisao2 = setInterval( function(){
                                                                                  //adequação para os novos tamannhos do dino e do quadrado
         quadrado2.style.animation = 'none'
         quadrado2.style.display = 'none'
-        alert('Você perdeu!')
     }
     
 
