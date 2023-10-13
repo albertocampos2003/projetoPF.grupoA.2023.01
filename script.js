@@ -97,3 +97,23 @@ let pontuacao = 0                                                              /
   
       }
   }, 10
+
+
+let pontuacao2 = 0                                                              //inicializa a pontuação com 0
+
+  function AdiocionarPontuacao2() {
+      pontuacao++;                                                               // adiciona a pontuação em 1
+      document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
+  }
+  
+  const pontuacaodino2 = setInterval(function()){
+      const topoDino2 = parseInt(window.getComputedStyle(dino2).getPropertyValue('top')
+      )
+  const EsquerdaQuadrado2 = parseInt(
+      window.getComputedStyle(quadrado2).getPropertyValue('left')
+  )
+      if(EsquerdaQuadrado2 < 1000 && EsquerdaQuadrado2 > 950 && topoDino >= -70){       //testa se o cacto e o dino colidiram
+          AdiocionarPontuacao2()
+  
+      }
+  }, 10
