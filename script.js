@@ -79,3 +79,21 @@ function tratarEventoKeyup2(event, callback) {
     tratarEventoKeyup2(event, pular2);
   });
 
+let pontuacao = 0                                                              //inicializa a pontuação com 0
+
+  function AdiocionarPontuacao() {
+      pontuacao++;                                                               // adiciona a pontuação em 1
+      document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
+  }
+  
+  const pontuacaodino = setInterval(function()){
+      const topoDino = parseInt(window.getComputedStyle(dino).getPropertyValue('top')
+      )
+  const EsquerdaQuadrado = parseInt(
+      window.getComputedStyle(quadrado).getPropertyValue('left')
+  )
+      if(EsquerdaQuadrado < 20 && EsquerdaQuadrado > 0 && topoDino < 130){       //testa se o cacto e o dino colidiram
+          AdiocionarPontuacao()
+  
+      }
+  }, 10
