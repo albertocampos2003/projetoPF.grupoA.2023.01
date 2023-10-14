@@ -3,15 +3,15 @@ const quadrado = document.querySelector('#quadrado') //controlar o obstáculo
 const dino2 = document.querySelector('#dino2')         //controlar o personagem
 const quadrado2 = document.querySelector('#quadrado2')
 
-function pular(){   //testar se o personagem possui a classe animar
+const pular = () =>{   //testar se o personagem possui a classe animar
     if(dino.classList != 'animar'){
         dino.classList.add('animar')  //se não tiver, adiciona
     }
 
-    setTimeout(function(){
+    setTimeout( function(){
         dino.classList.remove('animar')
     }, 500)
-}
+};
 
 const testarColisao = setInterval( function(){   
     
@@ -26,11 +26,10 @@ const testarColisao = setInterval( function(){
                                                                            //fiz a adequação para os novos tamannhos do dino e do quadrado
         quadrado.style.animation = 'none'
         quadrado.style.display = 'none'
-        alert('Você perdeu!')
     }
     
-
 }, 10)
+
 
 function pular2(){   //testar se o personagem possui a classe animar
     if(dino2.classList != 'animar2'){
@@ -55,7 +54,6 @@ const testarColisao2 = setInterval( function(){
                                                                                  //adequação para os novos tamannhos do dino e do quadrado
         quadrado2.style.animation = 'none'
         quadrado2.style.display = 'none'
-        alert('Você perdeu!')
     }
     
 
@@ -81,3 +79,41 @@ function tratarEventoKeyup2(event, callback) {
     tratarEventoKeyup2(event, pular2);
   });
 
+let pontuacao = 0                                                              //inicializa a pontuação com 0
+
+  function AdiocionarPontuacao() {
+      pontuacao++;                                                               // adiciona a pontuação em 1
+      document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
+  }
+  
+  const pontuacaodino = setInterval(function()){
+      const topoDino = parseInt(window.getComputedStyle(dino).getPropertyValue('top')
+      )
+  const EsquerdaQuadrado = parseInt(
+      window.getComputedStyle(quadrado).getPropertyValue('left')
+  )
+      if(EsquerdaQuadrado < 20 && EsquerdaQuadrado > 0 && topoDino < 130){       //testa se o cacto e o dino colidiram
+          AdiocionarPontuacao()
+  
+      }
+  }, 10
+
+
+let pontuacao2 = 0                                                              //inicializa a pontuação com 0
+
+  function AdiocionarPontuacao2() {
+      pontuacao++;                                                               // adiciona a pontuação em 1
+      document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
+  }
+  
+  const pontuacaodino2 = setInterval(function()){
+      const topoDino2 = parseInt(window.getComputedStyle(dino2).getPropertyValue('top')
+      )
+  const EsquerdaQuadrado2 = parseInt(
+      window.getComputedStyle(quadrado2).getPropertyValue('left')
+  )
+      if(EsquerdaQuadrado2 < 1000 && EsquerdaQuadrado2 > 950 && topoDino >= -70){       //testa se o cacto e o dino colidiram
+          AdiocionarPontuacao2()
+  
+      }
+  }, 10

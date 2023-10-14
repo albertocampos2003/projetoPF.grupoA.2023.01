@@ -1,22 +1,18 @@
-<!--Iniciei o código com atalho "!" que já me dá a base para começar a parte em-->
-
 <!DOCTYPE html>
-<html lang="port">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Jogo do Dino</title>
+    <title>Jogo Inicial</title>
 </head>
 <body>
-    <div id="game">
-    <div id="dino"></div> <!--troquei o nome do id-->
-    <div id="quadrado"></div>
-    <div id="game2"></div>
-    <div id="dino2"></div>
-    <div id="quadrado2"></div>
+    <h1>Bem-vindo ao Meu Jogo</h1>
+    <p>Clique no botão abaixo para iniciar o jogo:</p>
+    <div class="login-button">
+        <button><a href="jogo.html">Entrar</a></button>
     </div>
+
+    <script>
+        document.getElementById("startButton").addEventListener("click", iniciarJogo);
+    </script>
 </body>
 <script src="script.js"></script>
 </html>
-

@@ -6,7 +6,7 @@
 #game{
     width: 1000px;
     height: 250px;
-    border-bottom: 2px solid rgb(8, 124, 43);   /*grama/
+    border-bottom: 1px solid rgb(8, 124, 43);   /*grama*/
     margin: auto; /*só pra deixar a tela do jogo no meio*/
     background-image: url(Backgroud.jpg);   /*adicionei essa imagem para testar*/
 }
@@ -24,10 +24,10 @@
 }
 
 @keyframes dino {
-    0%{top: 100px;} /*novo salto para que o dino consiga pular o novo quadrado*/
-    30%{top: 50;}
-    70%{top:  50;}
-    100%{top: 100;}
+    0%{top: 200px;} /*novo salto para que o dino consiga pular o novo quadrado*/
+    30%{top: 120;} 
+    70%{top:  120;}
+    100%{top: 200;}
 }
 
 #quadrado{
@@ -37,7 +37,7 @@
     position: relative;
     top: 150px; /*faz com que o quadrado fique no "chão"*/
     left: 950px; /*faz com que o quadrado fique no canto esquerdo da tela*/
-    animation: quadrado 2s infinite linear;
+    animation: quadrado 3s infinite linear;
 }
 
 @keyframes quadrado {
@@ -71,10 +71,10 @@
 }
 
 @keyframes dino2 {     /*adequação na animação de pulo*/
-    0%{top: -150px;}
-    30%{top: -50;}
-    70%{top: -50;}
-    100%{top: -150;}
+    0%{top: -50px;}
+    30%{top: -130;}
+    70%{top: -130;}
+    100%{top: -50;}
 }
 
 #quadrado2{
@@ -83,7 +83,7 @@
     background-color: rgb(45, 233, 31);
     position: relative;
     top: -100px; /*adequação para segunda tela*/
-    animation: quadrado2 2s infinite linear;
+    animation: quadrado2 1s infinite linear;
 }
 
 @keyframes quadrado2 { /*mudança no sentido da animação*/
