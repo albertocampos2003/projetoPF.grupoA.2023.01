@@ -33,7 +33,7 @@
 #quadrado{
     width: 50px; /*novo tamanho do para se assimilar com o jogo original*/ 
     height: 50px; /*novo tamanho do para se assimilar com o jogo original*/ 
-    background-color: blue;
+    background-image: url(heart.png);
     position: relative;
     top: 150px; /*faz com que o quadrado fique no "chão"*/
     left: 950px; /*faz com que o quadrado fique no canto esquerdo da tela*/
@@ -55,6 +55,7 @@
     height: 250px;
     border: 1px solid black;
     margin-top: 30%; /*faz a segunda tela não colidir com a  primeira*/
+    background-image: url(Backgroud2.jpg); /*adicionei o segundo cenário*/
 }
 
 #dino2{
@@ -80,7 +81,7 @@
 #quadrado2{
     width: 50px; /*mesma coisa do quadrado1*/
     height: 50px;  /*mesma coisa do quadrado1*/
-    background-color: rgb(45, 233, 31);
+    background-image: url(star.png);
     position: relative;
     top: -100px; /*adequação para segunda tela*/
     animation: quadrado2 1s infinite linear;
