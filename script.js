@@ -116,4 +116,4 @@ let pontuacao2 = 0                                                              
           AdiocionarPontuacao2()
   
       }
-  }, 10)
+  }, 10) 

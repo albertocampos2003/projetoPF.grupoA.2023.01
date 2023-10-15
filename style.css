@@ -8,7 +8,7 @@
     height: 250px;
     border-bottom: 1px solid rgb(8, 124, 43);   /*grama*/
     margin: auto; /*só pra deixar a tela do jogo no meio*/
-    background-image: url(Backgroud.jpg);   /*adicionei essa imagem para testar*/
+    background-image: url(Background.jpg);   /*adicionei essa imagem para testar*/
 }
 
 #dino{
@@ -55,7 +55,7 @@
     height: 250px;
     border: 1px solid black;
     margin-top: 30%; /*faz a segunda tela não colidir com a  primeira*/
-    background-image: url(Backgroud2.jpg); /*adicionei o segundo cenário*/
+    background-image: url(Background2.jpg); /*adicionei o segundo cenário*/
 }
 
 #dino2{
