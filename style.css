@@ -84,7 +84,7 @@
     background-image: url(star.png);
     position: relative;
     top: -100px; /*adequação para segunda tela*/
-    animation: quadrado2 1s infinite linear;
+    animation: quadrado2 3s infinite linear;
 }
 
 @keyframes quadrado2 { /*mudança no sentido da animação*/
