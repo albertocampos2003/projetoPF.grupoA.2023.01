@@ -86,7 +86,7 @@ let pontuacao = 0                                                              /
       document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
   }
   
-  const pontuacaodino = setInterval(function()){
+  const pontuacaodino = setInterval(function(){
       const topoDino = parseInt(window.getComputedStyle(dino).getPropertyValue('top')
       )
   const EsquerdaQuadrado = parseInt(
@@ -96,7 +96,7 @@ let pontuacao = 0                                                              /
           AdiocionarPontuacao()
   
       }
-  }, 10
+  }, 10)
 
 
 let pontuacao2 = 0                                                              //inicializa a pontuação com 0
@@ -106,7 +106,7 @@ let pontuacao2 = 0                                                              
       document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
   }
   
-  const pontuacaodino2 = setInterval(function()){
+  const pontuacaodino2 = setInterval(function(){
       const topoDino2 = parseInt(window.getComputedStyle(dino2).getPropertyValue('top')
       )
   const EsquerdaQuadrado2 = parseInt(
@@ -116,4 +116,4 @@ let pontuacao2 = 0                                                              
           AdiocionarPontuacao2()
   
       }
-  }, 10
+  }, 10)
