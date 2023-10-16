@@ -87,12 +87,13 @@ let pontuacao = 0   //inicializa a pontuação com 0, foi deixado o let pois a p
   }
   
   const pontuacaodino = setInterval(() => { // função que testa se o dino e o obstaculo se colidiram, caso não, aumenta a pontuação
-      const topoDino = parseInt(window.getComputedStyle(dino).getPropertyValue('top')
+      const topoDino = parseInt(
+          window.getComputedStyle(dino).getPropertyValue('top')
       )
       const Esquerdaobstaculo = parseInt(
-      window.getComputedStyle(obstaculo).getPropertyValue('left')
+          window.getComputedStyle(obstaculo).getPropertyValue('left')
       )
-      if(Esquerdaobstaculo < 20 && Esquerdaobstaculo > 0 && topoDino < 130){       //testa se o cacto e o dino colidiram
+      if(Esquerdaobstaculo < 20 && Esquerdaobstaculo > 0 && topoDino < 150){       //testa se o cacto e o dino colidiram
           AdicionarPontuacao()
   
       }
@@ -107,12 +108,13 @@ let pontuacao2 = 0    //inicializa a pontuação com 0, foi deixado o let pois a
   }
   
   const pontuacaodino2 = setInterval(() => { // função que testa se o dino2 e o obstaculo2 se colidiram, caso não, aumenta a pontuação
-      const topoDino2 = parseInt(window.getComputedStyle(dino2).getPropertyValue('top')
+      const topoDino2 = parseInt(
+          window.getComputedStyle(dino2).getPropertyValue('top')
       );
       const Esquerdaobstaculo2 = parseInt(
           window.getComputedStyle(obstaculo2).getPropertyValue('left')
       );
-      if(Esquerdaobstaculo2 < 1000 && Esquerdaobstaculo2 > 950 && topoDino2 < -70){       //testa se o cacto e o dino colidiram
+      if(Esquerdaobstaculo2 < 1000 && Esquerdaobstaculo2 > 950 && topoDino2 < -100){       //testa se o cacto e o dino colidiram
           AdicionarPontuacao2();
       }
   }, 10);
