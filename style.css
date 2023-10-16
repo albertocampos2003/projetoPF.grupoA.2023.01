@@ -24,25 +24,25 @@
 }
 
 @keyframes dino {
-    0%{top: 200px;} /*novo salto para que o dino consiga pular o novo quadrado*/
+    0%{top: 200px;} /*novo salto para que o dino consiga pular o novo obstaculo*/
     30%{top: 120;} 
     70%{top:  120;}
     100%{top: 200;}
 }
 
-#quadrado{
+#obstaculo{
     width: 50px; /*novo tamanho do para se assimilar com o jogo original*/ 
     height: 50px; /*novo tamanho do para se assimilar com o jogo original*/ 
     background-image: url(heart.png);
     position: relative;
-    top: 150px; /*faz com que o quadrado fique no "chão"*/
-    left: 950px; /*faz com que o quadrado fique no canto esquerdo da tela*/
-    animation: quadrado 2s infinite linear;
+    top: 150px; /*faz com que o obstaculo fique no "chão"*/
+    left: 950px; /*faz com que o obstaculo fique no canto esquerdo da tela*/
+    animation: obstaculo 2s infinite linear;
 }
 
-@keyframes quadrado {
+@keyframes obstaculo {
     0%{left: 950px;}
-    100%{left: -100px;} /*faz com que o quadrado "saia" do canto direito da tela*/
+    100%{left: -100px;} /*faz com que o obstaculo "saia" do canto direito da tela*/
 }
 /*segunda tela*/
 *{
@@ -78,18 +78,18 @@
     100%{top: -50;}
 }
 
-#quadrado2{
-    width: 50px; /*mesma coisa do quadrado1*/
-    height: 50px;  /*mesma coisa do quadrado1*/
+#obstaculo2{
+    width: 50px; /*mesma coisa do obstaculo1*/
+    height: 50px;  /*mesma coisa do obstaculo1*/
     background-image: url(star.png);
     position: relative;
     top: -100px; /*adequação para segunda tela*/
-    animation: quadrado2 2s infinite linear;
+    animation: obstaculo2 2s infinite linear;
 }
 
-@keyframes quadrado2 { /*mudança no sentido da animação*/
+@keyframes obstaculo2 { /*mudança no sentido da animação*/
     0%{right: 0px;}
-    100%{right: -1000px;} /*faz com que o quadrado "saia" do canto esquerdo da tela*/
+    100%{right: -1050px;} /*faz com que o obstaculo "saia" do canto esquerdo da tela*/
 }
 
 #pontuacao{
