@@ -37,7 +37,7 @@
     position: relative;
     top: 150px; /*faz com que o quadrado fique no "chão"*/
     left: 950px; /*faz com que o quadrado fique no canto esquerdo da tela*/
-    animation: quadrado 3s infinite linear;
+    animation: quadrado 2s infinite linear;
 }
 
 @keyframes quadrado {
@@ -84,7 +84,7 @@
     background-image: url(star.png);
     position: relative;
     top: -100px; /*adequação para segunda tela*/
-    animation: quadrado2 3s infinite linear;
+    animation: quadrado2 2s infinite linear;
 }
 
 @keyframes quadrado2 { /*mudança no sentido da animação*/
@@ -103,3 +103,9 @@
     left: 0px;
     top: -60px;
 }
+
+/* Adicione estilos CSS ao seu gosto */
+h1 {
+    color: #333;
+}
+

@@ -108,15 +108,12 @@ let pontuacao2 = 0                                                              
   
   const pontuacaodino2 = setInterval(() => {
       const topoDino2 = parseInt(window.getComputedStyle(dino2).getPropertyValue('top')
-      )
-  const EsquerdaQuadrado2 = parseInt(
-      window.getComputedStyle(quadrado2).getPropertyValue('left')
-  )
+      );
+      const EsquerdaQuadrado2 = parseInt(
+          window.getComputedStyle(quadrado2).getPropertyValue('left')
+      );
       if(EsquerdaQuadrado2 < 1000 && EsquerdaQuadrado2 > 950 && topoDino2 < -70){       //testa se o cacto e o dino colidiram
-          AdicionarPontuacao2()
-  
+          AdicionarPontuacao2();
       }
-  }, 10) 
-
-
+  }, 10);
   
