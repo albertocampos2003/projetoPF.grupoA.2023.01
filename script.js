@@ -8,12 +8,12 @@ const pular = () =>{   //testar se o personagem possui a classe animar
         dino.classList.add('animar')  //se não tiver, adiciona
     }
 
-    setTimeout( function(){
+    setTimeout(() => {
         dino.classList.remove('animar')
     }, 500)
 };
 
-const testarColisao = setInterval( function(){   
+const testarColisao = setInterval(() => {   
     
     const topoDino = parseInt( 
         window.getComputedStyle(dino).getPropertyValue('top')
@@ -36,12 +36,12 @@ const pular2 = () => {   //testar se o personagem possui a classe animar
         dino2.classList.add('animar2')  //se não tiver, adiciona
     }
 
-    setTimeout(function(){
+    setTimeout(() => {
         dino2.classList.remove('animar2')
     }, 500)
 }
 
-const testarColisao2 = setInterval( function(){   
+const testarColisao2 = setInterval(() => {   
     
     const topoDino2 = parseInt( 
         window.getComputedStyle(dino2).getPropertyValue('top')
@@ -59,41 +59,41 @@ const testarColisao2 = setInterval( function(){
 
 }, 10)
 
-function tratarEventoKeyup(event, callback) {
+const tratarEventoKeyup = (event, callback) => {
     if (event.key === 'W' || event.key === 'w') { // Verificar se a tecla pressionada é "W" ou "w"
       callback();
     }
   }
   
-  document.addEventListener('keyup', function (event) {
+  document.addEventListener('keyup', (event) => {
     tratarEventoKeyup(event, pular);
   });
 
-function tratarEventoKeyup2(event, callback) {
+const tratarEventoKeyup2 = (event, callback) => {
     if (event.key === ' ') { 
       callback();
     }
   }
  
-  document.addEventListener('keyup', function (event) {
+  document.addEventListener('keyup', (event) => {
     tratarEventoKeyup2(event, pular2);
   });
 
 let pontuacao = 0                                                              //inicializa a pontuação com 0
 
-  function AdiocionarPontuacao() {
+  const AdicionarPontuacao = () => {
       pontuacao++;                                                               // adiciona a pontuação em 1
       document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
   }
   
-  const pontuacaodino = setInterval(function(){
+  const pontuacaodino = setInterval(() => {
       const topoDino = parseInt(window.getComputedStyle(dino).getPropertyValue('top')
       )
   const EsquerdaQuadrado = parseInt(
       window.getComputedStyle(quadrado).getPropertyValue('left')
   )
       if(EsquerdaQuadrado < 20 && EsquerdaQuadrado > 0 && topoDino < 130){       //testa se o cacto e o dino colidiram
-          AdiocionarPontuacao()
+          AdicionarPontuacao()
   
       }
   }, 10)
@@ -101,19 +101,19 @@ let pontuacao = 0                                                              /
 
 let pontuacao2 = 0                                                              //inicializa a pontuação com 0
 
-  function AdiocionarPontuacao2() {
+  const AdicionarPontuacao2 = () => {
       pontuacao++;                                                               // adiciona a pontuação em 1
       document.getElementById('pontuacao').innerText = 'Pontuaçao:'+pontuacao;
   }
   
-  const pontuacaodino2 = setInterval(function(){
+  const pontuacaodino2 = setInterval(() => {
       const topoDino2 = parseInt(window.getComputedStyle(dino2).getPropertyValue('top')
       )
   const EsquerdaQuadrado2 = parseInt(
       window.getComputedStyle(quadrado2).getPropertyValue('left')
   )
       if(EsquerdaQuadrado2 < 1000 && EsquerdaQuadrado2 > 950 && topoDino >= -70){       //testa se o cacto e o dino colidiram
-          AdiocionarPontuacao2()
+          AdicionarPontuacao2()
   
       }
   }, 10) 
