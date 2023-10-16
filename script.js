@@ -31,7 +31,7 @@ const testarColisao = setInterval( function(){
 }, 10)
 
 
-function pular2(){   //testar se o personagem possui a classe animar
+const pular2 = () => {   //testar se o personagem possui a classe animar
     if(dino2.classList != 'animar2'){
         dino2.classList.add('animar2')  //se não tiver, adiciona
     }
