@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="port">
 <head>
-    <title>Jogo Inicial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+    <title>Jogo do Dino</title>
 </head>
 <body>
+    <div class="container">
     <h1>Bem-vindo ao Meu Jogo</h1>
     <p>Clique no botão abaixo para iniciar o jogo:</p>
-    <div class="login-button">
-        <button><a href="jogo.html">Entrar</a></button>
-    </div>
-
-    <script>
-        document.getElementById("startButton").addEventListener("click", iniciarJogo);
-    </script>
+   <div class="login-button">
+    <button><a href="jogo.html">Iniciar</a></button>
+       </div>
+    
+        <div class="game-over"><h1>Game Over :(</h1><button onclick="restartGame()">Reiniciar</button></div>
+    
+   
 </body>
-<script src="script.js"></script>
+<script src="script.js">
+document.getElementById("startButton").addEventListener("click", iniciarJogo);</script>
 </html>
