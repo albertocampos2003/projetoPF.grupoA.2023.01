@@ -5,3 +5,6 @@ Link do vídeo do código base do jogo: https://www.youtube.com/watch?v=nHjSl0AX
 
 Link do vídeo apresentando o jogo: 
 https://drive.google.com/file/d/1QFABpKICEojJPwzXfl9s2X1j5cdEnKR3/view?usp=drivesdk
+
+Link do Netlify:
+https://wonderful-kringle-020fa3.netlify.app/
